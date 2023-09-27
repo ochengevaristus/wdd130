@@ -1,5 +1,0 @@
-Current Date: 2023-09-18
-Width: 5.0 mm
-Aspect Ratio: 4.0
-Diameter: 45.0 inches
-Volume: 3590.90 cubic mm
