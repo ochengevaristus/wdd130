@@ -1,62 +1,70 @@
-.logo {
+.logo{
     width: 80px;
     background-color: aqua;
+    padding-left: auto;
+    padding-right: 600px;
     padding-bottom: 20px;
+    
+
 }
 
 .icon {
     width: 80px;
-    margin-right: 750px;
-    margin-bottom: 10px;
+    margin-left: 750px;
+    margin-bottom: 100px;
     display: inline;
-    vertical-align: middle;
 }
 
 nav a,
-.join a {
+.join,
+ a {
     text-align: center;
-    color: rgb(255, 0, 0);
+    color: rgb(red, green, blue);
     text-decoration: none;
     background-color: rgb(33, 34, 37);
     background-size: auto;
-    display: inline;
+    display:inline;
+    
+
 }
 
-footer p {
+footer p{
     font-size: 1.2em;
 }
-
 footer p a:hover {
     text-decoration: underline;
 }
-
-.hero-img {
-    width: 600px;
+.hero-img{
+    width: 600;
 }
+    
 
-.home-title,
-.home-title-2 {
+
+.home-title{
     text-align: center;
 }
-
-.button-box {
+.home-title-2{
     text-align: center;
 }
-
-.card-img {
-    margin: 0 auto;
+.button-box{
+    text-align: center;
+}
+.card-img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
     width: 50%;
 }
-
-.home-grid {
+.home-grid{
     text-align: center;
 }
 
-.content {
-    max-width: 1600px;
+.content{
+    width: 1600px;
 }
 
 .social img {
     width: 50px;
     padding: 20px;
+    text-align: left;
 }
