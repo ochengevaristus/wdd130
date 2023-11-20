@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>White Water Rafting - Trips</title>
+    <link type="text/css" rel="stylesheet" href="styles/site-plan-rafting.css" />
+    <!-- Add the existing styles and the new styles for the subpage here -->
+    <style>
+        /* ... (previous styles) ... */
+
+        /* Additional styles for the subpage */
+        #trips-hero {
+            background-image: url('./images/rafting-hero.jpg');
+            background-size: cover;
+            color: white;
+            text-align: center;
+            padding: 2em;
+        }
+
+        #trips-hero h1 {
+            font-size: 2em;
+            margin-bottom: 0.5em;
+        }
+
+        #trip-gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin-top: 2em;
+        }
+
+        .trip-image {
+            width: 100%;
+            max-width: 400px;
+            margin: 1em;
+            border-radius: 8px;
+        }
+        /* Add these styles to your existing CSS file */
+
+        .real {
+            background-color: aqua;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .real p {
+            font-size: 1.2em;
+            margin: 0;
+        }
+
+        .real nav a {
+            text-decoration: none;
+            color: rgb(33, 34, 37);
+            margin-right: 20px;
+        }
+
+        .real .social img {
+            width: 50px;
+            margin-right: 10px;
+            display:inline-block;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="trips.html">Trips</a>
+            <a href="contactus.html">Contact Us</a>
+        </nav>
+        <img src="./images/logo.jpg" alt="Dry Oar Logo">
+    </header>
+    <div id="trips-hero">
+        <h1>Explore the Rapids with Our Guided Trips</h1>
+        <p>Join us for an adventure of a lifetime! Our guided trips cater to all levels, from beginners to experienced rafters. Explore the beauty of nature while navigating thrilling rapids with our expert guides.</p>
+    </div>
+    <main>
+        <h2>What to Expect:</h2>
+        <ul>
+            <li>Exciting rapids suitable for all skill levels</li>
+            <li>Expert guides ensuring your safety</li>
+            <li>Breathtaking scenery along the river</li>
+        </ul>
+
+        <h2>Gallery</h2>
+        <div id="trip-gallery">
+            <img class="trip-image" src="./images/trip1.jpg" alt="Rafting Trip 1">
+            <img class="trip-image" src="./images/trip2.jpg" alt="Rafting Trip 2">
+            <img class="trip-image" src="./images/trip3.jpg" alt="Rafting Trip 3">
+            <!-- Add more images as needed -->
+        </div>
+
+        <h2>Book Your Trip Now!</h2>
+        <p>Ready for an unforgettable adventure? Book your trip now and experience the thrill of white water rafting with Dry Oar!</p>
+        <a class='book' href="contactus.html">Book Now</a>
+    </main>
+    
+    <footer>
+        <footer class="real">
+            <p>Dry Oar &copy; 20XX - Evaristus Ochieng</p>
+            <nav></nav>
+            <div class="social">
+                <a href="https://facebook.com">
+                    <img src="./images/Facebook.png" alt="Facebook icon">
+                </a>
+                <a href="https://twitter.com">
+                    <img src="./images/twitter.png" alt="Twitter icon">
+                </a>
+                <a href="https://instagram.com">
+                    <img src="./images/instragram.png" alt="Instagram icon">
+                </a>
+            </div>
+        </footer>
+        
+        <p>&copy; 2023 White Water Rafting Company. All rights reserved.</p>
+    </footer>
+</body>
+</html>
