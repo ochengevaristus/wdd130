@@ -1,33 +1,32 @@
-/* if you are using any Google fonts change the font names below to your fonts. 
+/* if you are using any Google fonts, change the font names below to your fonts. 
 Any spaces in your font name should be replaced with a +. 
 Fonts are separated by a | */
-@import url('https://fonts.googleapis.com/css2?family=Gabarito&family=Inter:wght@600&family=Montserrat:wght@100&family=Open+Sans:wght@300&family=Roboto:wght@100&display=swap');;
+@import url('https://fonts.googleapis.com/css2?family=Gabarito&family=Inter:wght@600&family=Montserrat:wght@100&family=Open+Sans:wght@300&family=Roboto:wght@100&display=swap');
 
 :root {
   /* change the values below to your colors from your palette */
-  --primary-color: #b74f6f   ;
-  --secondary-color: #adbdff ;
-  --accent1-color: #3185fc;
-  --accent2-color: #35281d;
+  --primary-color: #f7f7f7;
+  --secondary-color: #333;
+  --accent1-color: #2c3e50;
+  --accent2-color: #ecf0f0;
 
   /* change the values below to your chosen font(s) */
   --heading-font: "Inter";
-  --paragraph-font: Roboto, Montserrat, open-san;
+  --paragraph-font: Roboto, Montserrat, Open Sans;
 
   /* these colors below should be chosen from among your palette colors above */
-  --headline-color-on-white: #b74f6f;  /* headlines on a white background */ 
-  --headline-color-on-color: #3185fc; /* headlines on a colored background */ 
-  --paragraph-color-on-white: #b74f6f; /* paragraph text on a white background */ 
-  --paragraph-color-on-color:#b74f6f; /* paragraph text on a colored background */ 
-  --paragraph-background-color: #b74f6f  ;
-  --nav-link-color: #b74f6f;
-  --nav-background-color: #35281d;
-  --nav-hover-link-color: #3185fc;
-  --nav-hover-background-color: #b74f6f;
+  --headline-color-on-white: #f7f7f7;  /* headlines on a white background */ 
+  --headline-color-on-color: #2c3e50; /* headlines on a colored background */ 
+  --paragraph-color-on-white: #f7f7f7; /* paragraph text on a white background */ 
+  --paragraph-color-on-color: #f7f7f7; /* paragraph text on a colored background */ 
+  --paragraph-background-color: #2c3e50;
+  --nav-link-color: #f7f7f7;
+  --nav-background-color: #ecf0f0;
+  --nav-hover-link-color: #2c3e50;
+  --nav-hover-background-color: #f7f7f7;
 }
 
-
-/*  Look around below...but DON'T CHANGE ANYTHING! */
+/* Look around below...but DON'T CHANGE ANYTHING! */
 
 body {
   max-width: 1200px;
@@ -90,7 +89,7 @@ p {
 .accent1 {
   background-color: var(--accent1-color);
 }
-.accent2{
+.accent2 {
   background-color: var(--accent2-color);
 }
 
@@ -108,14 +107,12 @@ nav {
 nav  {
   list-style-type: none;
   display: flex;
-
 }
 nav a {
   padding:1em;
   min-width: 120px;
   text-decoration: none;
   padding: 10px;
-
 }
 nav a:link, nav a:visited {
   color: var(--nav-link-color);
@@ -137,9 +134,7 @@ nav a:hover {
     "page2 page2 . . page3 page3";
 }
 .sitemap > div {
-
   text-align: center;
-
 }
 .sm-home {
   grid-area: home;
@@ -173,12 +168,13 @@ nav a:hover {
   border-top: 1px solid;
   border-right: 1px solid;
 }
-/*Home page*/
+
+/* Home page */
 body, h1, h2, p {
   margin: 0;
   padding: 0;
 }
-.book{
+.book {
   width: 20px;
   height: 15px;
 }
@@ -225,4 +221,3 @@ footer {
   color: #fff;
   padding: 200px;
 }
-
