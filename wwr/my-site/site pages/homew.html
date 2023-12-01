@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* Your existing styles */
+
+        /* Additional Styles for the Home Page */
+        main {
+            text-align: center;
+        }
+
+        .content-section {
+            margin-bottom: 30px;
+        }
+
+        .book {
+            margin: 20px;
+            text-align: center;
+        }
+
+        .book img {
+            max-width: 100%;
+            height: auto;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        .book h3 {
+            margin: 10px 0;
+        }
+
+        #explore-more a {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        #explore-more a:hover {
+            background-color: #45a049;
+        }
+    </style>
+    <script>
+        /* Your existing JavaScript code */
+
+        function showContent(section) {
+            const mainContent = document.querySelector('main');
+            switch (section) {
+                case 'Home':
+                    mainContent.innerHTML = `
+                        <section id="home" class="content-section">
+                            <h2>Welcome to Vivo Library!</h2>
+                            <p>Discover a world of knowledge through our extensive collection of books.</p>
+                        </section>
+                    `;
+                    break;
+                case 'Books':
+                    // Add logic to display books or redirect to the Books page
+                    break;
+                // Add cases for other sections
+                default:
+                    mainContent.innerHTML = '<h2>Page Not Found</h2>';
+                    break;
+            }
+        }
+    </script>
+    <title>Online Library</title>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Vivo Library</h1>
+    </header>
+
+    <!-- Left Navigation -->
+    <nav>
+        <a href="#" onclick="toggleNav()">☰</a>
+        <ul>
+            <li><a href="#" onclick="showContent('Home')">Home</a></li>
+            <li><a href="#" onclick="showContent('Books')">Books</a></li>
+            <!-- Add other navigation items -->
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Welcome Section -->
+        <section id="home" class="content-section">
+            <h2>Welcome to Vivo Library!</h2>
+            <p>Discover a world of knowledge through our extensive collection of books.</p>
+        </section>
+
+        <!-- Featured Books Section -->
+        <section id="featured-books" class="content-section">
+            <h2>Featured Books</h2>
+            <div class="book">
+                <img src="book1.jpg" alt="Book 1">
+                <h3>Book Title 1</h3>
+                <p>Author: Author Name</p>
+            </div>
+            <div class="book">
+                <img src="book2.jpg" alt="Book 2">
+                <h3>Book Title 2</h3>
+                <p>Author: Author Name</p>
+            </div>
+            <div class="book">
+                <img src="book3.jpg" alt="Book 3">
+                <h3>Book Title 3</h3>
+                <p>Author: Author Name</p>
+            </div>
+        </section>
+
+        <!-- Explore More Section -->
+        <section id="explore-more" class="content-section">
+            <h2>Explore More</h2>
+            <p>Ready to dive into the world of literature?</p>
+            <a href="#" onclick="showContent('Books')">Explore Books</a>
+        </section>
+    </main>
+
+    <!-- Your existing footer -->
+    <footer>
+        <p>&copy; 2023 Online Library</p>
+    </footer>
+</body>
+</html>

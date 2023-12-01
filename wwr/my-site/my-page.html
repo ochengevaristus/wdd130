@@ -4,19 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <title>About Us</title>
-</head>
-<style>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Gabarito&family=Inter:wght@600&family=Montserrat:wght@100&family=Open+Sans:wght@300&family=Roboto:wght@100&display=swap');
+
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Inter', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f0f0f0;
+    background-color: #f7f7f7; 
 }
 
 header {
-    background-color: #007bff;
-    color: #fff;
+    font-family: 'Gabarito', sans-serif;
+    background-color: #3498db; 
+    color: #f7f7f7; 
     text-align: center;
     padding: 20px;
 }
@@ -27,16 +28,18 @@ h1 {
 
 .content {
     display: flex;
-    flex-wrap: wrap; 
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     padding: 20px;
 }
 
 .text {
+    font-family: 'Open Sans', sans-serif;
     flex: 1;
     padding: 20px;
     max-width: 600px;
+    background-color: #f7f7f7;
 }
 
 h2 {
@@ -45,6 +48,7 @@ h2 {
 
 p {
     font-size: 16px;
+    color: #333; 
 }
 
 ul {
@@ -52,45 +56,68 @@ ul {
     padding-left: 20px;
 }
 
-.images {
-    display: flex;
-    justify-content: space-around; 
-    align-items: center;
-    margin-top: 20px; 
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
 }
-.link{
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
     background-color: #007bff;
     color: #fff;
-    text-align: center;
-    padding: 20px
-    background-color rgb(0, 123, 255)
-    color rgb(255, 255, 255)
-    display block
-    font-family Arial, sans-serif
-    height 55px
-    padding-bottom 20px
-    padding-left 20px
-    padding-right 20px
-    padding-top 20px
-    text-align center
-    width
+}
+
+.images {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
 }
 
 .images img {
-    max-width: 100%; 
-    height: auto; 
+    max-width: 100%;
+    height: auto;
 }
+        .text {
+            font-family: 'Open Sans', sans-serif;
+            flex: 1;
+            padding: 20px;
+            max-width: 600px;
+        }
 
 
-
-</style>
+        .link {
+    font-family: 'Roboto', sans-serif;
+    background-color: #3498db; 
+    color: #f7f7f7; 
+    text-align: center;
+    padding: 20px;
+    height: 55px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    text-align: center;
+    width: 100%;
+}
+    </style>
+    <title>About Us</title>
+</head>
 <body>
     <header>
         <h1>About Our Vivo Readers Library</h1>
         <nav>
-            <a href="home-page.html">Home</a>
-            <a href="my-page.html">Services</a>
-            <a href="about-us.html">About Us</a>
+            <ul>
+                <li><a href="home-page.html">Home</a></li>
+                <li><a href="my-page.html">Services</a></li>
+                <li><a href="about-us.html">About Us</a></li>
+            </ul>
         </nav>
     </header>
     <section class="content">
@@ -124,6 +151,54 @@ ul {
                 <li>Community: Connect with fellow readers, join discussions, and share your love for books.</li>
             </ul>
         </div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Title</th>
+                        <th>Author</th>
+                        <th>Genre</th>
+                        <th>Price</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>The Girl with the Dragon Tattoo</td>
+                        <td> Stieg Larsson</td>
+                        <td>Mystery/Thriller</td>
+                        <td>$3.99</td>
+                    </tr>
+                    <tbody>
+                        <tr>
+                            <td>Gone Girl</td>
+                            <td>Gillian Flynn</td>
+                            <td>Mystery/Thriller</td>
+                            <td>$5.99</td>
+                        </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>The Da Vinci Code</td>
+                                <td> Dan Brown</td>
+                                <td>Mystery/Thriller</td>
+                                <td>$4.99</td>
+                            </tr>
+                            <tbody>
+                                <tr>
+                                    <td>Big Little Lies</td>
+                                    <td> Liane Moriarty</td>
+                                    <td>Mystery/Thriller</td>
+                                    <td>$4.99</td>
+                                </tr>
+                                <tbody>
+                                    <tr>
+                                        <td>In the Woods</td>
+                                        <td>Tana French</td>
+                                        <td>Mystery/Thriller</td>
+                                        <td>$6.99</td>
+                                    </tr>
+                </tbody>
+            </table>
+        </div>
         <div class="images">
             <img src="alex.jpg" alt="Library Interior">
             <img src="doordelivery.jpg" alt="Library Shelves">
@@ -131,8 +206,8 @@ ul {
     </section>
     <footer class="link">
         <nav>
-        <p>&copy; 2023 Vivo Readers. All rights reserved.</p>
-        <a href="services-wireframe.html">My site services wireframe</a>
+            <p>&copy; 2023 Vivo Readers. All rights reserved.</p>
+            <a href="services-wireframe.html">My site services wireframe</a>
         </nav>
     </footer>
 </body>

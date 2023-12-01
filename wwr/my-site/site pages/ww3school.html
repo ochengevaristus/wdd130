@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            display: flex;
+        }
+
+        header {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 1em;
+            width: 100%;
+        }
+
+        nav {
+            background-color: #333;
+            color: white;
+            padding: 0.5em;
+            height: 100vh;
+            width: 10%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: fixed;
+            left: 0;
+            top: 0;
+            overflow-x: hidden;
+        }
+
+        nav.collapsed {
+            width: 50px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: white;
+            padding: 5px;
+            border-radius: 5px;
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        main {
+            padding: 20px;
+            width: 90%;
+            color: #333; /* Set the text color for the main content */
+        }
+
+        footer {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 1em;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Add your JavaScript code here if needed
+        });
+
+        function toggleNav() {
+            const nav = document.querySelector('nav');
+            nav.classList.toggle('collapsed');
+        }
+
+        function showContent(section) {
+            // Add your content display logic here
+        }
+    </script>
+    <title>Online Library</title>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Vivo Library</h1>
+    </header>
+
+    <!-- Left Navigation -->
+    <nav>
+        <a href="#" onclick="toggleNav()">☰</a>
+        <ul>
+            <li><a href="#" onclick="showContent('Home')">Home</a></li>
+            <li><a href="#" onclick="showContent('Books')">Books</a></li>
+            <li><a href="#" onclick="showContent('Genres')">Genres</a></li>
+            <li><a href="#" onclick="showContent('Fiction')">Fiction</a></li>
+            <li><a href="#" onclick="showContent('Classics')">Classics</a></li>
+            <li><a href="#" onclick="showContent('Mystery')">Mystery</a></li>
+            <li><a href="#" onclick="showContent('Sci-Fi')">Sci-Fi</a></li>
+            <li><a href="#" onclick="showContent('Contact')">Contact</a></li>
+            <li><a href="#" onclick="showContent('About')">About</a></li>
+            <li><a href="#" onclick="showContent('Settings')">Settings</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Your content goes here -->
+    </main>
+
+    <!-- Your existing footer -->
+    <footer>
+        <p>&copy; 2023 Online Library</p>
+    </footer>
+</body>
+</html>
